@@ -37,4 +37,15 @@
   .hot-package .package-btn {
     @apply bg-white text-paste-500 w-full border border-white hover:bg-paste-500 hover:text-white transition-colors;
   }
+
+  .custom-accordion-button {
+    @apply relative;
+  }
+  .custom-accordion-button::after {
+    @apply content-[""] bg-[url('../../images/icons/expand-arrow.png')] bg-no-repeat bg-contain absolute right-5p w-5 h-5 transition-transform;
+  }
+  .custom-accordion-button:not(.collapsed)::after {
+    transform: rotate(-180deg);
+    transform-origin: center;
+  }
 }
