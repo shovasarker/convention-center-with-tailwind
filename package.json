@@ -1,0 +1,19 @@
+{
+  "name": "convention-center-with-tailwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.0.16"
+  },
+  "dependencies": {
+    "postcss": "^8.4.5",
+    "tw-elements": "^1.0.0-alpha9"
+  }
+}

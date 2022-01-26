@@ -1,0 +1,3 @@
+
+# Ignoring all the Files inside the node_modules folder for git add .
+node_modules
