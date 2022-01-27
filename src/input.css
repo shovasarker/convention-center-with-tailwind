@@ -31,7 +31,7 @@
   }
 
   .hot-package img {
-    @apply content-[url('../../images/icons/check-circle-white.png')];
+    @apply content-[url('../../images/icons/check-circle-white.svg')];
   }
 
   .hot-package .package-btn {
