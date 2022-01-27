@@ -12,6 +12,12 @@
 
         <!-- Tailwind-elements js link -->
         <script src="./dist/js/index.min.js" defer></script>
+
+        <!-- custom toast js link -->
+        <script src="./dist/js/toast.js" defer></script>
+
+        <!-- *font awesome kit link -->
+        <script src="https://kit.fontawesome.com/18dfec91eb.js" crossorigin="anonymous" defer></script>
     </head>
 
     <body>
@@ -144,6 +150,37 @@
                 <!-- carousel from tailwind element end -->
             </section>
             <!-- carousel or image slider section end -->
+
+            <!-- Extra Section start  -->
+            <section class="container px-6 my-12 md:my-16 lg:my-20">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+                    <div class="grid grid-cols-6 grid-rows-3 gap-2 lg:gap-3 p-4 md:p-6 lg:p-0">
+                        <img src="./images/convention-2_1.png" alt="" class="col-span-4 h-full">
+                        <img src="./images/convention-3_1.png" alt="" class="col-span-2 row-span-2 h-full">
+                        <img src="./images/convention-4.png" alt="" class="col-span-2 h-full">
+                        <img src="./images/convention-5.jpg" alt="" class="col-span-2 h-full">
+                        <img src="./images/convention-1_1.png" alt="" class="col-span-3 row-start-3 h-full">
+                        <img src="./images/convention-6_1.png" alt="" class="col-span-3 row-start-3 h-full">
+                    </div>
+                    <div
+                        class="h-full flex flex-col lg:justify-center items-center lg:items-start text-center lg:text-left">
+                        <h2 class="text-3xl md:text-4xl xl:text-5xl xl:leading-tight font-bold mb-4 text-paste-800">
+                            Different Event
+                            Needs Different
+                            Settings</h2>
+                        <p class="mb-5 text-paste-700">Explore our vast collection of themes for planning your next
+                            event.We have a
+                            vast
+                            collection
+                            of themes for every types event we host.</p>
+                        <button
+                            class="text-sm bg-paste-500 border border-paste-500 text-white rounded-lg px-6 py-3 hover:bg-white hover:text-paste-500 transition-colors">Explore
+                            our themes
+                            <i class="fas fa-arrow-right ml-2"></i></button>
+                    </div>
+                </div>
+            </section>
+            <!-- Extra Section End -->
 
             <!-- package section start -->
             <section class="container px-6 my-20">
@@ -380,6 +417,21 @@
                 </div>
             </section>
             <!-- FAQ Section end -->
+
+            <!-- toast start -->
+            <div class="fixed pr-5 pb-5 bottom-0p right-0p w-auto" id="toast">
+                <div class="flex items-start justify-between p-2 pl-3 rounded-r-md text-sm bg-white/80 shadow-xl border-l-8 border-l-paste-500"
+                    role="alert">
+                    <div class="flex items-center mr-10 space-x-2 py-2">
+                        <img class="inline-block" src="./images/icons/Vector.svg" alt="">
+                        <span class="font-normal">20% off on next booking</span>
+                    </div>
+                    <button type="button" id="close-btn"
+                        class=" btn-close box-content w-4 h-4 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline">
+                    </button>
+                </div>
+            </div>
+            <!-- toast end -->
 
         </main>
         <!-- main section end -->
